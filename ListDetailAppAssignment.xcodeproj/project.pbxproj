@@ -12,6 +12,12 @@
 		EF133E572310F7A400FE39E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF133E552310F7A400FE39E9 /* Main.storyboard */; };
 		EF133E592310F7A500FE39E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF133E582310F7A500FE39E9 /* Assets.xcassets */; };
 		EF133E5C2310F7A500FE39E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF133E5A2310F7A500FE39E9 /* LaunchScreen.storyboard */; };
+		EF133E682310F86200FE39E9 /* TEDTalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF133E662310F86200FE39E9 /* TEDTalkTableViewCell.swift */; };
+		EF133E692310F86200FE39E9 /* TEDTalkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF133E672310F86200FE39E9 /* TEDTalkTableViewCell.xib */; };
+		EF133E6E2310F89E00FE39E9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF133E6D2310F89E00FE39E9 /* Router.swift */; };
+		EF133E702310F8CB00FE39E9 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF133E6F2310F8CB00FE39E9 /* AppConstants.swift */; };
+		EF133E742310FDA000FE39E9 /* TalkShowVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF133E732310FDA000FE39E9 /* TalkShowVO.swift */; };
+		EF133E7623110C7B00FE39E9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF133E7523110C7B00FE39E9 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		EF133E582310F7A500FE39E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF133E5B2310F7A500FE39E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF133E5D2310F7A500FE39E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF133E662310F86200FE39E9 /* TEDTalkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEDTalkTableViewCell.swift; sourceTree = "<group>"; };
+		EF133E672310F86200FE39E9 /* TEDTalkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TEDTalkTableViewCell.xib; sourceTree = "<group>"; };
+		EF133E6D2310F89E00FE39E9 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EF133E6F2310F8CB00FE39E9 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		EF133E732310FDA000FE39E9 /* TalkShowVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkShowVO.swift; sourceTree = "<group>"; };
+		EF133E7523110C7B00FE39E9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,84 @@
 		EF133E502310F7A400FE39E9 /* ListDetailAppAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				EF133E712310FD6C00FE39E9 /* data */,
+				EF133E6C2310F88E00FE39E9 /* utils */,
+				EF133E652310F7FD00FE39E9 /* cells */,
+				EF133E642310F7C600FE39E9 /* controllers */,
+				EF133E632310F7B500FE39E9 /* storyboards */,
 				EF133E512310F7A400FE39E9 /* AppDelegate.swift */,
-				EF133E532310F7A400FE39E9 /* ViewController.swift */,
-				EF133E552310F7A400FE39E9 /* Main.storyboard */,
 				EF133E582310F7A500FE39E9 /* Assets.xcassets */,
 				EF133E5A2310F7A500FE39E9 /* LaunchScreen.storyboard */,
 				EF133E5D2310F7A500FE39E9 /* Info.plist */,
 			);
 			path = ListDetailAppAssignment;
+			sourceTree = "<group>";
+		};
+		EF133E632310F7B500FE39E9 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EF133E552310F7A400FE39E9 /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		EF133E642310F7C600FE39E9 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF133E532310F7A400FE39E9 /* ViewController.swift */,
+				EF133E7523110C7B00FE39E9 /* DetailViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		EF133E652310F7FD00FE39E9 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				EF133E6B2310F87900FE39E9 /* swifts */,
+				EF133E6A2310F86E00FE39E9 /* xibs */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		EF133E6A2310F86E00FE39E9 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				EF133E672310F86200FE39E9 /* TEDTalkTableViewCell.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		EF133E6B2310F87900FE39E9 /* swifts */ = {
+			isa = PBXGroup;
+			children = (
+				EF133E662310F86200FE39E9 /* TEDTalkTableViewCell.swift */,
+			);
+			path = swifts;
+			sourceTree = "<group>";
+		};
+		EF133E6C2310F88E00FE39E9 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF133E6D2310F89E00FE39E9 /* Router.swift */,
+				EF133E6F2310F8CB00FE39E9 /* AppConstants.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		EF133E712310FD6C00FE39E9 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				EF133E722310FD7600FE39E9 /* vos */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		EF133E722310FD7600FE39E9 /* vos */ = {
+			isa = PBXGroup;
+			children = (
+				EF133E732310FDA000FE39E9 /* TalkShowVO.swift */,
+			);
+			path = vos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF133E5C2310F7A500FE39E9 /* LaunchScreen.storyboard in Resources */,
+				EF133E692310F86200FE39E9 /* TEDTalkTableViewCell.xib in Resources */,
 				EF133E592310F7A500FE39E9 /* Assets.xcassets in Resources */,
 				EF133E572310F7A400FE39E9 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF133E6E2310F89E00FE39E9 /* Router.swift in Sources */,
 				EF133E542310F7A400FE39E9 /* ViewController.swift in Sources */,
+				EF133E682310F86200FE39E9 /* TEDTalkTableViewCell.swift in Sources */,
 				EF133E522310F7A400FE39E9 /* AppDelegate.swift in Sources */,
+				EF133E702310F8CB00FE39E9 /* AppConstants.swift in Sources */,
+				EF133E742310FDA000FE39E9 /* TalkShowVO.swift in Sources */,
+				EF133E7623110C7B00FE39E9 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
